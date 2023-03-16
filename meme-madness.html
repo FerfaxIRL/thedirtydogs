@@ -41,7 +41,61 @@
             height: 100%;
             border: none;
         }
-     
+     body {
+            font-family: Arial, sans-serif;
+            background-color: #212121;
+            color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+        a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .accomplishments {
+            text-align: center;
+        }
+        .team {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 2rem;
+        }
+        .team-member {
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 5px;
+            background-color: #424242;
+        }
+        .team-member img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+        .team-member h3 {
+            margin-top: 1rem;
+        }
+        .banner {
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+        }
+        h2 {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
