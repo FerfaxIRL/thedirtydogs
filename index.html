@@ -12,34 +12,41 @@
             padding: 0;
         }
 
-              .nav:hover .nav-content {
-            display: block;
-        }
+      .dropdown {
+    position: relative;
+    display: inline-block;
+}
 
-        .nav-content {
-            display: none;
-            position: absolute;
-            background-color: #343a40;
-            min-width: 160px;
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
+.menu-text:hover + .nav-content,
+.nav-content:hover {
+    display: block;
+}
 
-        .nav-content a {
-            color: white;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
+.menu-text {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
 
-        .nav-content a:hover {
-            background-color: #007bff;
-        }
-	
-	.main-nav {
-            text-align: right;
-            padding-right: 1rem;
-        }
+.nav-content {
+    display: none;
+    position: absolute;
+    background-color: #343a40;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.nav-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-content a:hover {
+    background-color: #007bff;
+}
 
     .warlock {
             color: #9482C9;
@@ -149,18 +156,19 @@
 		</style>
 			</head>
 			<body>
-				<div class="nav">
-        <span>Menu &#9662;</span>
-        <div class="nav-content">
-            <a href="index.html">Home</a>
-            <a href="contact-us.html">Contact Us</a>
-            <a href="meme-madness.html">Meme Madness</a>
-        </div>
-				<nav class="main-nav">
-					<a href="index.html">Home</a>  |	
-					<a href="contact-us.html">Contact Us</a> |
-					<a href="meme-madness.html">Meme Madness</a>
-				</nav>
+				<div class="dropdown">
+    <span class="menu-text">Menu</span>
+    <div class="nav-content">
+        <a href="index.html">Home</a>
+        <a href="meet-the-team.html">Meet the Team</a>
+        <a href="contact-us.html">Contact Us</a>
+        <a href="meme-madness.html">Meme Madness</a>
+    </div>
+</div>
+
+</div>
+
+				
 				<header>
 					<h1/>
 					<img class="banner"
@@ -415,3 +423,4 @@
 					</main>
 				</body>
 			</html>
+
